@@ -50,7 +50,7 @@ const TradeToEarn = () => {
             <p
               style={{
                 color: "#5F5F5F",
-                marginTop: -29,
+                marginTop: -20,
                 marginLeft: 316,
                 fontWeight: 400,
                 textAlign: "center",
