@@ -18,9 +18,9 @@ const Header = () => {
                                 <a class='text-white'>Products</a>
                                 <div class="dropdown-menu absolute top-0 hidden h-auto flex pt-4 mt-3">
                                     <ul class="block w-[130px] bg-blue bg-opacity-80 px-5 py-4 ">
-                                        <li class="py-1"><a class="block text-white font-normal text-sm cursor-pointer">Centralized</a></li>
-                                        <li class="py-1"><a class="block text-white font-normal text-sm  cursor-pointer">Decentralized</a></li>
-                                        <li class="py-1"><a class="block text-white font-normal text-sm cursor-pointer">indexx Tokens</a></li>
+                                        <li class="py-1"><a href='https://inex.indexx.ai/indexx-exchange/buy-sell' class="block text-white font-normal text-sm cursor-pointer">Centralized</a></li>
+                                        <li class="py-1"><a href='/*' class="block text-white font-normal text-sm  cursor-pointer">Decentralized</a></li>
+                                        <li class="py-1"><a href='/*' class="block text-white font-normal text-sm cursor-pointer">indexx Tokens</a></li>
                                     </ul>
                                 </div>
                             </li>

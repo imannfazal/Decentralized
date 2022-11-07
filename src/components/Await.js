@@ -3,10 +3,12 @@ import pending from '../assets/pending.png';
 import exchange from '../assets/exchange.png';
 import confirm from '../assets/clock.png';
 import sending from '../assets/sending.png';
+import Header from './Header';
 
 const Await = (props) => {
     return (
         <>
+            <Header />
             <div class='mx-[525px] border border-grey border-opacity-20 rounded px-5 py-3 mt-24 text-grey'>
                 <div class='text-grey text-xl flex justify-center mb-4 mt-2'>Awaiting your deposit</div>
 

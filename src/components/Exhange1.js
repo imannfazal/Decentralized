@@ -3,6 +3,7 @@ import { DownOutlined } from '@ant-design/icons';
 import { Alert } from 'antd';
 import { Select, Menu, Space , Input} from 'antd';
 import { useState } from 'react';
+import Header from './Header';
 const Exchange1 = () => {
 
     const[value, setValue] = useState(null);
@@ -24,6 +25,7 @@ const Exchange1 = () => {
 
     return (
         <>
+            <Header />
             <div class='mx-[550px] border border-grey border-opacity-20 rounded px-5 py-3 mt-24 text-grey'>
                 <div class='text-grey text-xl flex justify-center'>Add Exchange Details</div>
                         <input placeholder='You send' class='py-1 border border-opacity-20 border-grey px-3 pr-16 mt-6'  onChange={onGet} value={value} />

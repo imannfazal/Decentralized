@@ -4,6 +4,7 @@ import { DownOutlined } from '@ant-design/icons';
 import { Button, Select, Menu, Space } from 'antd';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from './Header';
 const Exchange = (props) => {
     const [value, setValue] = useState(null);
     const [value2, setValue2] = useState(null);
@@ -24,6 +25,7 @@ const Exchange = (props) => {
     }
     return (
         <>
+        <Header />
             <div class='mx-[550px] border border-grey border-opacity-20 rounded px-5 py-3 mt-24 text-grey'>
                 <div class='text-grey text-xl flex justify-center'>Add Exchange Details</div>
                 <input placeholder='You send' class='py-1 border border-opacity-20 border-grey px-3 pr-16 mt-6' value={value} onChange={onGet} />
