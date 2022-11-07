@@ -1,11 +1,12 @@
-import First from "./First";
 import Header from "./Header";
+import First from "./First";
 
 const Home2 = () => {
     return (
-        <>  
-            <First />
-        </>
+            <span>
+                <Header />
+                <First />
+            </span>
     );
 }
 

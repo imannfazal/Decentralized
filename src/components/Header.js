@@ -34,7 +34,7 @@ const Header = () => {
                                 <div class="dropdown-menu absolute top-0 hidden h-auto flex pt-4 mt-3">
                                     <ul class="block w-[130px] bg-blue bg-opacity-80 px-5 py-4 ">
                                         <li class="py-1"><a href='/TradeToEarn' class="block text-white font-normal text-sm cursor-pointer">Trade to earn</a></li>
-                                        <li class="py-1"><a class="block text-white font-normal text-sm cursor-pointer">indexx Bank</a></li>
+                                        <li class="py-1"><a href='/indexxBank' class="block text-white font-normal text-sm cursor-pointer">indexx Bank</a></li>
                                     </ul>
                                 </div>
                             </li>
