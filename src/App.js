@@ -16,6 +16,7 @@ import Borrow from "./components/Bank/Borrow";
 function App() {
   return (
     <>
+    <Header></Header>
     <BrowserRouter>
       <Routes>
         <Route path="/*" element={<Home2 />} />
