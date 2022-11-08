@@ -184,55 +184,55 @@ const TradeToEarn = () => {
             </div>
           </>
         }
-        <Image
-          class="grid  place-items-center"
-          preview={false}
-          src={exghands}
-          style={{
-            paddingTop: 100,
-            display: "flex",
-            justifyContent: "center",
-            width: 400,
-            alignItems: "center",
-          }}
-        ></Image>
-        <br />
-        <Image
-          class="grid  place-items-center"
-          preview={false}
-          src={no11}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: 500,
-            alignItems: "center",
-          }}
-        ></Image>{" "}
-        <br />
-        <Image
-          class="grid  place-items-center"
-          preview={false}
-          src={no22}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            width: 500,
-            alignItems: "center",
-          }}
-        ></Image>{" "}
-        <br />
-        <Image
-          class="grid  place-items-center"
-          preview={false}
-          src={no3}
-          style={{
-            paddingLeft: 10,
-            display: "flex",
-            justifyContent: "center",
-            width: 480,
-            alignItems: "center",
-          }}
-        ></Image>{" "}
+        <div class="grid  place-items-center place-content-center">
+          <Image
+            preview={false}
+            src={exghands}
+            style={{
+              paddingTop: 100,
+              display: "flex",
+              justifyContent: "center",
+              width: 400,
+              alignItems: "center",
+            }}
+          ></Image>
+          <br />
+          <Image
+            preview={false}
+            src={no11}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              width: 500,
+              alignItems: "center",
+            }}
+          ></Image>{" "}
+          <br />
+          <Image
+            preview={false}
+            src={no22}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              width: 500,
+              alignItems: "center",
+            }}
+          ></Image>{" "}
+          <br />
+          <Image
+            class="grid  place-items-center"
+            preview={false}
+            src={no3}
+            style={{
+              paddingLeft: 10,
+              display: "flex",
+              justifyContent: "center",
+              width: 480,
+              alignItems: "center",
+            }}
+          ></Image>{" "}
+        </div>
+
         <br />
       </div>
       {/* add your footer here */}
