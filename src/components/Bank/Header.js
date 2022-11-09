@@ -1,21 +1,24 @@
-import Header from "./Header";
+import logo from "../../assets/logonew.png";
+const Header = () => {
+    return (
+        <header class="text-white sticky top-0 z-20">
+            <div class="bg-blackbg h-[70px]">
+                <div class="container mx-auto md:flex md:flex-wrap pt-6 pb-1 md:flex-row items-center bg-black ">
+                    <a href="https://www.indexx.ai/"><img class="leading-normal w-[60px] mt-2 " src={logo} alt="index logo" /></a>
+                    <nav class="md:static fixed botttom-0 top-0 bg-grey w-10/12 md:w-auto md:bg-transparent md:ml-4 pb-5 p-2 md:pl-4 md:flex md:flex-wrap items-center md:text-base md:space-x-5 md:visible space-y-5 md:space-y-0 text-whitebg">
+                        <a class="mr text-white text-sm hover:text-selected" href="/indexxBank">DASHBOARD</a>
+                        <a class="mr-5 text-white text-sm hover:text-selected" href="/indexx-bank/MyPage">MY PAGE</a>
+                        <a class="mr-5 text-white text-sm hover:text-selected" href="/indexx-bank/Earn">STAKE TO EARN</a>
+                        <a class="mr-5 text-white text-sm hover:text-selected" href="/indexx-bank/Borrow">BORROW</a>
+                        <a class="mr-5 text-white text-sm hover:text-selected" href="/indexx-bank/bASSET">iASSET</a>
+                        <a class="text-white text-sm hover:text-selected" href="/indexx-bank/Govern">GOVERN</a>
+                    </nav>
+                    <button class="inline-flex border rounded-full border-lgreen hover:border-green py-0.5 px-3 text-xs hover:text-green text-lgreen md:ml-[450px]  mr-5 md:mt-0 mb-5"><a href="/*" class='text-white'>indexx.ai</a></button>
+                    <button class="inline-flex items-center border rounded-full border-lgreen hover:border-green py-0.5 px-3 text-xs hover:text-green text-lgreen md:mt-0 mb-5">Connect Wallet</button>
+                </div>
+            </div>
+        </header>
+    );
+}
 
-const Liquidations = ({isVisible, onClose}) => {
-    if(!isVisible) return null;
-  return (
-    <>
-    
-   <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center">
-    <div className="md:w-[400px] w-[350px] flex flex-col bg-whitebg border border-grey border-opacity-20 rounded">
-      <button className="text-black text-xl place-self-end font-semibold pr-5 pt-2" onClick={()=>onClose()}>x</button>
-      <div className="bg-whitebg md:p-2 rounded place-self-center md:text-xl text-sm font-normal mb-5">Participate in Liquidations</div>
-      <div className="bg-whitebg p-2 rounded place-self-start md:text-sm text-xs font-medium ml-14 border border-grey border-opacity-20 rounded md:w-72 w-56 hover:bg-lighthover cursor-pointer mb-2"><a href="#">Lighthouse Defi</a></div>
-      <div className="bg-whitebg p-2 rounded place-self-start md:text-sm text-xs font-medium ml-14 mb-2 border border-grey border-opacity-20 rounded md:w-72 w-56 hover:bg-lighthover cursor-pointer"><a href="#">Kujira</a></div>
-      <div className="bg-whitebg p-2 rounded place-self-start md:text-sm text-xs font-medium ml-14 mb-9 border border-grey border-opacity-20 rounded md:w-72 w-56 hover:bg-lighthover cursor-pointer"><a href="#">Terra Toolbox</a></div>
-    </div>
-   </div>
-  </>
-  );
-  }
-  
-  export default Liquidations;
+export default Header;
