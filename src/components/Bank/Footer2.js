@@ -1,9 +1,9 @@
-import lady from '../assets/womanFlipCoin.svg';
-import yt from '../assets/youtTubeIcon.svg';
-import insta from '../assets/instagramIcon.svg';
-import twi from '../assets/twitterIcon.svg';
-import red from '../assets/redditIcon.svg';
-import index from '../assets/indexxGrey.png';
+import lady from '../../assets/womanFlipCoin.svg';
+import yt from '../../assets/youtTubeIcon.svg';
+import insta from '../../assets/instagramIcon.svg';
+import twi from '../../assets/twitterIcon.svg';
+import red from '../../assets/redditIcon.svg';
+import index from '../../assets/indexxGrey.png';
 const Footer2 = () => {
     return(
         <>

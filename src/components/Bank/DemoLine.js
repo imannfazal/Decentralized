@@ -21,7 +21,7 @@ const DemoLine = () => {
     padding: 'auto',
     xField: 'Date',
     yField: 'scales',
-    color: '#3E8501',
+    color: '#008910',
     xAxis: {
       // type: 'timeCat',
       tickCount: 5,

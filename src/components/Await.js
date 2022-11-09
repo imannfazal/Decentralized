@@ -4,15 +4,16 @@ import exchange from '../assets/exchange.png';
 import confirm from '../assets/clock.png';
 import sending from '../assets/sending.png';
 import Header from './Header';
+import Footer from './Footer';
 
 const Await = (props) => {
     return (
         <>
             <Header />
-            <div class='mx-[525px] border border-grey border-opacity-20 rounded px-5 py-3 mt-24 text-grey'>
+            <div class='mx-[525px] border border-grey border-opacity-20 rounded-sm px-5 py-3 mt-24 text-grey'>
                 <div class='text-grey text-xl flex justify-center mb-4 mt-2'>Awaiting your deposit</div>
 
-                <div class='mb-2'><span class='text-xs pr-16'>Send deposit: </span><span class='text-[15px]'></span></div>
+                <div class='mb-2'><span class='text-xs pr-16'>Send deposit: </span><span class='text-[15px]'>0.0007195 BTC</span></div>
 
                 <span class='text-xs pr-12 inline-flex'>Deposit address: </span>
                 <div class='border border-grey border-opacity-20 mt-1 rounded-sm'>
@@ -30,6 +31,7 @@ const Await = (props) => {
                 <div class='mb-2'><span class='text-xs pr-24'>You get: </span><span class='text-[15px]'>≈0.0007195 BTC</span></div>
                 <div class='mb-2 inline-flex'><span class='text-xs pr-12'>Recipient address: </span><span class='text-[12px] border border-grey border-opacity-20 rounded-sm py-1 px-2'>3L8Ck6bmhskslldn1102836JlJHS1utuTz</span></div>
             </div>
+            <Footer />
         </>
     );
 }
