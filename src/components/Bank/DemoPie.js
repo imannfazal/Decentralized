@@ -19,7 +19,7 @@ const DemoPie = () => {
     data,
     angleField: 'value',
     colorField: 'type',
-    color:['#3E8501','#000000'],
+    color:['#008910','#5f5f5f'],
     width: '4px',
     radius: 1,
     innerRadius: 0.8,

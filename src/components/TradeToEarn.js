@@ -8,6 +8,7 @@ import no11 from "../assets/no11.png";
 import no22 from "../assets/no22.png";
 import no3 from "../assets/no3.png";
 import exghands from "../assets/exghands.png";
+import Header from "./Header";
 
 // images wil be given to you in decentralized colors.
 
@@ -28,6 +29,7 @@ const TradeToEarn = () => {
 
   return (
     <>
+    <Header />
       <div className="scan-container trade-to-earn flex-direction-column ">
         <br />
         <br />

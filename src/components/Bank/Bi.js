@@ -1,13 +1,14 @@
 import Header from "./Header";
+import Footer2 from "./Footer2";
 
 const Bi = () => {
     return(
         <>
         <Header />
-        <div class="container mx-auto flex flex-wrap pt-6 pb-1 flex-col md:flex-row items-center bg-black">
-            <div class="md:text-xl text-lg font-bold text-all pt-6 md:pb-6">Modify Borrow Interest</div><br />
+        <div class="container mx-auto flex flex-wrap pt-6 pb-1 flex-col md:flex-row items-center bg-grey">
+            <div class="md:text-xl text-lg font-bold text-all pt-6 md:pb-6 ">Modify Borrow Interest</div><br />
         </div>
-        <div class='flex justify-center'>
+        <div class='flex justify-center '>
         <div class='inline-grid grid-col-3 border border-grey border-opacity-20 rounded md:ml-4 p-8'>
             <div class='col-start-1 bg-allbg text-grey text-sm pb-0.5'>Title</div>
             <div class='col-start-1 col-span-3   mb-8 border border-grey border-opacity-30 rounded md:pr-72 py-2 pl-2'>
@@ -33,6 +34,7 @@ const Bi = () => {
             <div class='col-start-1 col-span-3 flex justify-center'><button class='border border-grey border-opacity-20 rounded md:px-56 px-28 md:py-3 py-2 bg-green text-white text-xs  hover:bg-hovergreen rounded'>Submit</button></div>
         </div>
         </div>
+        <Footer2 />
         </>
     );
 }
