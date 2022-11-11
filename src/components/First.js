@@ -29,7 +29,7 @@ const First = () => {
         <>
             <div class='mx-[185px] inline-flex  mt-16 text-grey '>
                 <span class='w-[700px] border border-grey border-opacity-20 rounded-sm px-5 mr-6 py-7'>
-                    <span class='ml-[403px]  pb-[6px] text-grey'><Segmented options={['Daily', 'Weekly', 'Monthly', 'Yearly']} style={{ color: '#5f5f5f' }} selectedSegmentTintColor='#5f5f5f' /></span>
+                    <span class='ml-[403px]  pb-[6px] text-grey'><Segmented options={['Daily', 'Weekly', 'Monthly', 'Yearly']} style={{ olor: '#5f5f5f' }} selectedSegmentTintColor='#5f5f5f' /></span>
                     <span class='py-5'><Chartt /></span>
                 </span>
                 <span class=''>
