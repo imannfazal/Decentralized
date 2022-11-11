@@ -1,12 +1,12 @@
 import logo from '../assets/white.png';
 import poly from '../assets/Polygon.png';
 import Navbar from 'react-bootstrap/Navbar';
-import background from '../assets/header.png';
+import background from '../assets/bg33.png';
 import './Header.css';
 
 const Header = () => {
     return (
-        <header class="text-gray-600 bg-blue" style={{ backgroundImage: `url(${background})` }}>
+        <header class="text-gray-600 bg-blue bg-opacity-90 bg-fill" style={{ backgroundImage: `url(${background})` }}>
 
             <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
                 <a class="flex title-font font-normal items-center text-white mb-4 md:mb-0">

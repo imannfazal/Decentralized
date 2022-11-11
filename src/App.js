@@ -10,6 +10,12 @@ import Earn from "./components/Bank/Earn";
 import Govern from "./components/Bank/Govern";
 import Basset from "./components/Bank/Basset";
 import Borrow from "./components/Bank/Borrow";
+import Poll from "./components/Bank/Poll";
+import Bi from "./components/Bank/Bi";
+import Polls from "./components/Bank/Polls";
+import Govtstake from "./components/Bank/Govstake";
+import Buy from "./components/Bank/Buy";
+import Second from "./components/Bank/Second";
 
 function App() {
   return (
@@ -27,6 +33,13 @@ function App() {
         <Route path="/indexx-bank/bASSET" element={<Basset />} />
         <Route path="/indexx-bank/Govern" element={<Govern />} />
         <Route path="/indexx-bank/Borrow" element={<Borrow />} />
+        <Route path="/Poll" element={<Poll />} /> 
+        <Route path="/modify-borrow-interest" element={<Bi />} /> 
+        <Route path="/modify-inex-distribution" element={<Polls />} />
+        <Route path="/GovStake" element={<Govtstake />} />
+        <Route path="/Buy&Sell" element={<Buy />} /> 
+        <Route path="/Provide" element={<Second />} />
+        
       </Routes>
       
     </BrowserRouter>

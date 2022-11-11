@@ -4,7 +4,7 @@ const Liquidations = ({isVisible, onClose}) => {
     if(!isVisible) return null;
   return (
     <>
-    <Header />
+   
    <div className="fixed inset-0 bg-black bg-opacity-25 backdrop-blur-sm flex justify-center items-center">
     <div className="md:w-[400px] w-[350px] flex flex-col bg-whitebg border border-grey border-opacity-20 rounded">
       <button className="text-black text-xl place-self-end font-semibold pr-5 pt-2" onClick={()=>onClose()}>x</button>

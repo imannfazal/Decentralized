@@ -13,8 +13,8 @@ const Header = () => {
                         <a class="mr-5 text-white text-sm hover:text-selected" href="/indexx-bank/bASSET">iASSET</a>
                         <a class="text-white text-sm hover:text-selected" href="/indexx-bank/Govern">GOVERN</a>
                     </nav>
-                    <button class="inline-flex border rounded-full border-lgreen hover:border-green py-0.5 px-3 text-xs hover:text-green text-lgreen md:ml-[450px]  mr-5 md:mt-0 mb-5"><a href="/*" class='text-white'>indexx.ai</a></button>
-                    <button class="inline-flex items-center border rounded-full border-lgreen hover:border-green py-0.5 px-3 text-xs hover:text-green text-lgreen md:mt-0 mb-5">Connect Wallet</button>
+                    <button class="inline-flex border rounded-full border-lgreen hover:border-green py-0.5 px-3 text-xs hover:text-green text-lgreen md:ml-[450px]  mr-5 md:mt-0 mb-5"><a href="/*" class='text-lgreen'>indexx.ai</a></button>
+                    <button class="inline-flex items-center border rounded-full border-lgreen hover:border-green py-0.5 px-3 text-xs hover:text-lgreen text-lgreen md:mt-0 mb-5">Connect Wallet</button>
                 </div>
             </div>
         </header>
