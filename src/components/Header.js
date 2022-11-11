@@ -1,6 +1,5 @@
 import logo from '../assets/white.png';
 import poly from '../assets/Polygon.png';
-import Navbar from 'react-bootstrap/Navbar';
 import background from '../assets/bg33.png';
 import './Header.css';
 

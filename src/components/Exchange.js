@@ -21,6 +21,7 @@ const Exchange = (props) => {
         console.log("inside function");
         setValue(event.target.value);
         if (parseFloat(value) < 50) {
+            <Alert message="Info Text" type="info" />
             console.log(value);
         }
         else {

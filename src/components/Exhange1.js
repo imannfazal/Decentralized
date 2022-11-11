@@ -24,6 +24,7 @@ const Exchange1 = () => {
         console.log("inside function");
         setValue(event.target.value);
         if (parseFloat(value) < 0.00184853) {
+            <Alert message="Info Text" type="info" />
             console.log(value);
         }
         else {

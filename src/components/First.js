@@ -1,5 +1,6 @@
 import './First.css';
-import { Select, Tabs, Segmented } from 'antd';
+import { Select, Alert, Tabs, Segmented } from 'antd';
+import { useState } from 'react';
 import Chartt from './Chartt';
 import btc from '../assets/BTC.png'
 import ada from '../assets/ADA.png'
@@ -7,14 +8,28 @@ import algo from '../assets/ALGO.png'
 import enj from '../assets/ENJ.png'
 const { Option, OptGroup } = Select;
 const First = () => {
+    const [value, setValue] = useState(null);
+    const [value2, setValue2] = useState(null);
     const handleChange = (value) => {
         console.log(`selected ${value}`);
+    };
+
+    const onGet = (event) => {
+        console.log("inside function");
+        setValue(event.target.value);
+        if (parseFloat(value) < 0.00184853) {
+            <Alert message="Info Text" type="info" />
+            console.log(value);
+        }
+        else {
+            setValue2(value * 13.3);
+        }
     };
     return (
         <>
             <div class='mx-[185px] inline-flex  mt-16 text-grey '>
                 <span class='w-[700px] border border-grey border-opacity-20 rounded-sm px-5 mr-6 py-7'>
-                    <span class='ml-[403px]  pb-[6px] text-grey'><Segmented options={['Daily', 'Weekly', 'Monthly', 'Yearly']} style={{ tintColor: '#5f5f5f' }} selectedSegmentTintColor='#5f5f5f' /></span>
+                    <span class='ml-[403px]  pb-[6px] text-grey'><Segmented options={['Daily', 'Weekly', 'Monthly', 'Yearly']} style={{ color: '#5f5f5f' }} selectedSegmentTintColor='#5f5f5f' /></span>
                     <span class='py-5'><Chartt /></span>
                 </span>
                 <span class=''>
@@ -23,7 +38,7 @@ const First = () => {
                     <div class='border border-grey border-opacity-20 px-5 pt-9 pb-[68px] mt-6 rounded-sm'>
                         <Tabs defaultActiveKey="1">
                             <Tabs.TabPane tab="Swap" key="1" style={{ color: '#5f5f5f' }}>
-                                <input placeholder='You send' class='py-1 border border-opacity-20 border-grey px-3 pr-9 mt-6' />
+                                <input placeholder='You send' class='py-1 border border-opacity-20 border-grey px-3 pr-9 mt-6' value={value} onChange={onGet} />
                                 <span class='inline-flex ml-4 text-grey'>
                                     <Select
                                         defaultValue='BTC'
@@ -40,7 +55,7 @@ const First = () => {
                                 </span>
                                 <div class='text-blue text-[10px] bg-blue bg-opacity-20 ml-7 mt-0.5 mr-28 rounded-sm py-[1px] px-2 whitespace-pre'>Min amount:                           0.00184853</div>
 
-                                <input placeholder='You get' class='py-1 border border-opacity-20 border-grey px-3 pr-9 my-6 ' />
+                                <input placeholder='You get' class='py-1 border border-opacity-20 border-grey px-3 pr-9 my-6 ' value={value2} />
                                 <span class='inline-flex ml-4'>
                                     <Select
                                         defaultValue='ETH'
