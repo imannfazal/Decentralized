@@ -1,5 +1,5 @@
 import React from 'react';
-import { Line } from '@ant-design/charts';
+import { Area } from '@ant-design/plots';
 
 const Chartt = () => {
   const data = [
@@ -18,11 +18,18 @@ const Chartt = () => {
     data,
     xField: 'year',
     yField: 'value',
-    point: {
-      size: 5,
-      shape: 'diamond',
+    xAxis: {
+      range: [0, 1],
+      tickCount: 5,
+    },
+    areaStyle: () => {
+      return {
+        fill: 'l(270) 0:#ffffff 0.5:#006DFF 1:#004CB2',
+      };
     },
   };
-  return <Line {...config} />;
+
+  return <Area {...config} />;
+
 };
 export default Chartt;

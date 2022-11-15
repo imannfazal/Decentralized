@@ -4,13 +4,25 @@ import exchange from '../assets/exchange.png';
 import confirm from '../assets/clock.png';
 import sending from '../assets/sending.png';
 import Header from './Header';
+import bg from '../assets/bgForUi.png';
 import Footer from './Footer';
+import { useSearchParams } from "react-router-dom";
 
 const Await = (props) => {
+    //receiving data
+    //const location = useLocation();
+    //console.log(location.state);
+    //const value = location.state;
+
+    const [searchparams ] = useSearchParams();
+    console.log(searchparams.get('valuee'));
+
     return (
         <>
+                    <div class='h-[696px]' style={{ backgroundImage: `url(${bg})`, backgroundRepeat: "no-repeat", backgroundSize: 'cover' }} >
+
             <Header />
-            <div class='mx-[525px] border border-grey border-opacity-20 rounded-sm px-5 py-3 mt-24 text-grey'>
+            <div class='mx-[525px] border border-grey border-opacity-20 rounded-sm px-5 py-3 mt-24 text-grey bg-white'>
                 <div class='text-grey text-xl flex justify-center mb-4 mt-2'>Awaiting your deposit</div>
 
                 <div class='mb-2'><span class='text-xs pr-16'>Send deposit: </span><span class='text-[15px]'>0.0007195 BTC</span></div>
@@ -32,6 +44,7 @@ const Await = (props) => {
                 <div class='mb-2 inline-flex'><span class='text-xs pr-12'>Recipient address: </span><span class='text-[12px] border border-grey border-opacity-20 rounded-sm py-1 px-2'>3L8Ck6bmhskslldn1102836JlJHS1utuTz</span></div>
             </div>
             <Footer />
+            </div>
         </>
     );
 }

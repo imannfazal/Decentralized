@@ -1,1 +1,29 @@
 @import "~antd/dist/antd.css";
+
+
+.chart_inner_middle {
+    color:#F66036;
+    font-size:20px;
+}
+
+.chart_inner_right .ant-segmented {
+    background-color:rgba(129, 129, 129, 0.1);
+    font-size:15px;
+    color:#5f5f5f;
+    padding:0;
+    border-radius:5px;
+}
+
+.chart_inner_right .ant-segmented-item-label{
+    width: 58px;
+    font-size: 15px;
+    min-height: 37px;
+    line-height: 37px;
+}
+
+.chart_inner_right .ant-segmented-item-selected{
+    background: #006DFF;
+    color:#fff;
+    border-radius:5px;
+
+}
