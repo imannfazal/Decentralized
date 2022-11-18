@@ -6,16 +6,11 @@ import Await from "./components/Await";
 import TradeToEarn from "./components/TradeToEarn";
 import Home from "./components/Pages/Home";
 import Mypage from "./components/Bank/Mypage";
-import Earn from "./components/Bank/Earn";
-import Govern from "./components/Bank/Govern";
-import Basset from "./components/Bank/Basset";
+import Invest from "./components/Bank/Invest";
 import Borrow from "./components/Bank/Borrow";
-import Poll from "./components/Bank/Poll";
-import Bi from "./components/Bank/Bi";
-import Polls from "./components/Bank/Polls";
-import Govtstake from "./components/Bank/Govstake";
-import Buy from "./components/Bank/Buy";
-import Second from "./components/Bank/Second";
+import BorrowAwait from "./components/Bank/BorrowAwait";
+import Repay from "./components/Bank/Repay";
+import Withdraw from "./components/Bank/Withdraw";
 
 function App() {
   return (
@@ -29,17 +24,11 @@ function App() {
         <Route path="/TradeToEarn" element={<TradeToEarn />} />
         <Route path="/indexxBank" element={<Home />} />
         <Route path="/indexx-bank/MyPage" element={<Mypage />} />
-        <Route path="/indexx-bank/Earn" element={<Earn />} />
-        <Route path="/indexx-bank/bASSET" element={<Basset />} />
-        <Route path="/indexx-bank/Govern" element={<Govern />} />
+        <Route path="/indexx-bank/Invest" element={<Invest />} />
         <Route path="/indexx-bank/Borrow" element={<Borrow />} />
-        <Route path="/Poll" element={<Poll />} /> 
-        <Route path="/modify-borrow-interest" element={<Bi />} /> 
-        <Route path="/modify-inex-distribution" element={<Polls />} />
-        <Route path="/GovStake" element={<Govtstake />} />
-        <Route path="/Buy&Sell" element={<Buy />} /> 
-        <Route path="/Provide" element={<Second />} />
-        
+        <Route path="/indexx-bank/Borrow/BorrowAwait" element={<BorrowAwait />} />
+        <Route path="/indexx-bank/Borrow/Repay" element={<Repay />} />
+        <Route path="/index-bank/Invest/Withdraw-Crypto" element={<Withdraw />} />
       </Routes>
       
     </BrowserRouter>

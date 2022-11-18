@@ -1,8 +1,20 @@
 @import "~antd/dist/antd.css";
 
+.ant-tabs-tab {
+    color: #5f5f5f !important;
+  }
+
+  .ant-tabs-tab-active {
+    color: #006DFF !important;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #ffffff !important; 
+    font-weight: 200;
+    padding: 2px;
+ }
 
 .chart_inner_middle {
-    color:#F66036;
     font-size:20px;
 }
 

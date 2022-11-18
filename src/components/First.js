@@ -31,7 +31,7 @@ const First = () => {
         <div class='h-[696px] bg-no-repeat' style={{ backgroundImage: `url(${bg})`, backgroundRepeat: "no-repeat", backgroundSize: 'cover' }} >
             <div class='mx-[185px] inline-flex  mt-16 text-grey bg-white'>
                 <span class='w-[700px] border border-grey border-opacity-20 rounded-sm pl-7 pr-5 mr-6 py-7'>
-                    <span class='inline-flex'><span class='inline-flex text-2xl text-grey pb-7'><img src={token} style={{ width: 25, height: 25 , marginTop: 7 }} />IN500<span class='text-grey text-opacity-50'>/USD </span></span><div className="chart_inner_right"><Segmented options={['24H', '1W', '1M', '1Y']} style={{ color: '#5f5f5f', marginLeft: 256, marginBottom: 6 }} selectedSegmentTintColor='#5f5f5f' /></div></span>
+                    <span class='inline-flex'><span class='inline-flex text-2xl text-grey pb-7'><img src={token} style={{ width: 25, height: 25 , marginTop: 4, marginRight: 5 }} />IN500<span class='text-grey text-opacity-50'>/USD </span></span><div className="chart_inner_right"><Segmented options={['24H', '1W', '1M', '1Y']} style={{ color: '#5f5f5f', marginLeft: 256, marginBottom: 6 }} selectedSegmentTintColor='#5f5f5f' /></div></span>
                     <span class='pl-5'><Chartt /></span>
                 </span>
                 <span class=''>
@@ -55,7 +55,7 @@ const First = () => {
                                         <Option value="enj"><img src={enj} class='w-6 inline pb-1 mr-1' />ENJ</Option>
                                     </Select>
                                 </span>
-                                <div class='text-blue text-[10px] bg-blue bg-opacity-20 ml-7 mt-0.5 mr-32 rounded-sm py-[1px] px-2 whitespace-pre'>Min amount:                     0.00184853</div>
+                                <div class='w-[186px] text-blue text-[10px] bg-blue bg-opacity-20 ml-[22px] mt-1 mb-4 rounded-sm py-[1px] px-2 whitespace-pre'>Min amount:                   0.00184853</div>
 
                                 <input
                                     placeholder="You get"
@@ -131,8 +131,8 @@ const First = () => {
                                         </Option>
                                     </Select>
                                 </span>
-                                <div class="text-blue text-[10px] bg-blue bg-opacity-20 ml-7 mt-0.5 mr-32 rounded-sm py-[1px] px-2 whitespace-pre">
-                                    Min amount:                                   50
+                                <div class="w-[186px] text-blue text-[10px] bg-blue bg-opacity-20 ml-[21px] mb-2 mt-1 rounded-sm py-[1px] px-2 whitespace-pre">
+                                    Min amount:                               50
                                 </div>
                                 <input
                                     placeholder="You get"

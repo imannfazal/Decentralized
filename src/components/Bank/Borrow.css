@@ -1,0 +1,13 @@
+.ant-tabs-tab {
+    color: #5f5f5f !important;
+  }
+
+  .ant-tabs-tab-active {
+    color: #008910 !important;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: #5f5f5f !important;
+    font-weight: 500;
+    padding: 2px;
+ }

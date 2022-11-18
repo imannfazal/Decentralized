@@ -38,32 +38,33 @@ const Exchange = (props) => {
                 <Header />
                 <div class='mx-[170px] inline-flex  mt-16 text-grey '>
                     <span class='w-[700px] border border-grey border-opacity-20 rounded-sm pl-7 pr-5 mr-6 py-7 bg-white'>
-                        <span class='inline-flex'><span class='inline-flex text-2xl text-grey pb-7'><img src={token} style={{ width: 25, height: 25, marginTop: 7 }} />IN500<span class='text-grey text-opacity-50'>/USD </span></span><div className="chart_inner_right"><Segmented options={['24H', '1W', '1M', '1Y']} style={{ color: '#5f5f5f', marginLeft: 256, marginBottom: 6 }} selectedSegmentTintColor='#5f5f5f' /></div></span>
+                        <span class='inline-flex'><span class='inline-flex text-2xl text-grey pb-7'><img src={token} style={{ width: 25, height: 25 , marginTop: 4, marginRight: 5 }} />IN500<span class='text-grey text-opacity-50'>/USD </span></span><div className="chart_inner_right"><Segmented options={['24H', '1W', '1M', '1Y']} style={{ color: '#5f5f5f', marginLeft: 256, marginBottom: 6 }} selectedSegmentTintColor='#5f5f5f' /></div></span>
                         <span class='pl-5'><Chartt /></span>
                     </span>
                     <div class='border border-grey border-opacity-20 rounded-sm px-5 py-3 text-grey bg-white'>
-                        <div class='text-grey text-xl flex justify-center'>Add Exchange Details</div>
-                        <input placeholder='You send' class='py-1 border border-opacity-20 border-grey px-3 pr-16 mt-6' value={value} onChange={onGet} />
+                    <div class='text-grey text-xl flex justify-center'>Add Exchange Details</div>
+                        <input placeholder='You send' class='py-1 border border-opacity-20 border-grey px-3 pr-9 mt-9' value={value} onChange={onGet} />
                         <span class='inline-flex ml-3 text-grey'>
                             <Select
-                                defaultValue="USD"
+                                defaultValue='Select'
                                 style={{
-                                    width: 95,
+                                    width: 100,
                                     color: '#5f5f5f',
-                                }} >
-                                onChange={handleChange}
+                                }}
+                                onChange={handleChange} >
                                 <Option value="ada"><img src={ada} class='w-6 inline pb-1 mr-1' />ADA</Option>
                                 <Option value="btc"><img src={btc} class='w-6 inline pb-1 mr-1' />BTC</Option>
                                 <Option value="algo"><img src={algo} class='w-6 inline pb-1 mr-1' />ALGO</Option>
                                 <Option value="enj"><img src={enj} class='w-6 inline pb-1 mr-1' />ENJ</Option>
                             </Select>
                         </span>
-                        <div class='text-blue text-[10px] bg-blue bg-opacity-20 ml-7 mt-0.5 mr-32 rounded-sm py-[1px] px-2 whitespace-pre'>Min amount:                                              50</div>
+                        <div class='w-[186px] text-blue text-[10px] bg-blue bg-opacity-20 ml-[21px] mt-0.5 rounded-sm py-[1px] px-2 whitespace-pre'>Min amount:                                50</div>
 
-                        <input placeholder='You get' class='py-1 border border-opacity-20 border-grey px-3 pr-16 my-6 ' value={value2} />
+                        <input placeholder='You get' class='py-1 border border-opacity-20 border-grey px-3 pr-9 mt-9' value={value2} />
+
                         <span class='inline-flex ml-4'>
                             <Select
-                                defaultValue="BTC"
+                                defaultValue="Select"
                                 style={{
                                     width: 95,
                                     color: '#5f5f5f',
@@ -75,12 +76,12 @@ const Exchange = (props) => {
                                 <Option value="enj"><img src={enj} class='w-6 inline pb-1 mr-1' />ENJ</Option>
                             </Select>
                         </span>
-                        <div>Enter Wallet Address</div>
-                        <input placeholder='The recipients address' class='py-1 border border-opacity-20 border-grey px-3 mt-3 mb-1 pr-[157px]' />
-                        <div class='mb-8 text-xs'><Alert message="Please be careful not to provide a smart contract as your Ethereum payout address." type="info" showIcon /></div>
-                        <a href="/Await"><div class='bg-blue hover:bg-hblue flex justify-center text-white rounded-sm py-2 mb-6'>Create and Exchange</div></a>
-                    </div>
+                        <div class='mt-12'>Enter Wallet Address</div>
+                        <input placeholder='The recipients address' class='py-1 border border-opacity-20 border-grey pl-3 mt-3 mb-1 pr-[157px]' />
+                        <div class=' mt-2 text-xs w-[330px]'><Alert style={{ color: '#5f5f5f' }} message="Please be careful not to provide a smart contract as your Ethereum payout address." type="info" showIcon /></div>
+                        <a href='/Await'><button class='w-[330px] bg-blue hover:bg-hblue  flex justify-center text-white rounded-sm py-2 mt-12 mb-2'>Create and Exchange</button></a>
 
+                    </div>
                 </div>
                 <Footer />
             </div>
