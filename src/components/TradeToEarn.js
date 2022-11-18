@@ -1,7 +1,7 @@
 import { Card, Image, Button, Input } from "antd";
 import { Divider } from "antd";
 import { Typography } from "antd";
-import { useNavigate } from "react-router-dom";
+
 
 import exgcoin from "../assets/exgcoin.png";
 import no11 from "../assets/no11.png";
@@ -10,22 +10,11 @@ import no3 from "../assets/no3.png";
 import exghands from "../assets/exghands.png";
 import Header from "./Header";
 
-// images wil be given to you in decentralized colors.
-
-// import no1 from "../../assets/arts/no1.png";
-// import no2 from "../../assets/arts/no2.png";
-// import no3 from "../../assets/arts/no3.png";
-
-//import Footer from '../Footer/Footer';
-
-import { useEffect, useState } from "react";
 import React from "react";
 
 const { Text } = Typography;
 
 const TradeToEarn = () => {
-  const navigate = useNavigate();
-  let [totalBalanceInUSD, settotalBalanceInUSD] = useState(0);
 
   return (
     <>

@@ -17,7 +17,7 @@ const Borrow = () => {
             <span class="md:text-xl text-xl font-bold text-grey md:pl-[96px] pl-4 pt-14 mr-56 flex justify-start">BORROW</span>
             <div class="flex justify-center">
                 <div class='border border-grey border-opacity-20 rounded w-[300px] mt-8 text-grey text-xs'>
-                    <div class='flex justify-center'><img src={inex} style={{ width: 70, paddingTop: 44, paddingBottom: 14 }} /></div><div class='text-grey flex justify-center mb-6 text-[20px]'>IN500</div>
+                    <div class='flex justify-center'><img alt="" src={inex} style={{ width: 70, paddingTop: 44, paddingBottom: 14 }} /></div><div class='text-grey flex justify-center mb-6 text-[20px]'>IN500</div>
                     <div class='border border-grey border-opacity-20 rounded pl-6 mx-4 mb-1 whitespace-pre'><span class='border-r border-grey border-opacity-20 pr-[22px]'>Amount</span><input type='text' style={{ marginLeft: 5, paddingTop: 3, paddingBottom: 3 }} ></input></div>
                     <div class='border border-grey border-opacity-20 rounded pl-6 mx-4 mb-1 whitespace-pre'><span class='w-[124px] border-r border-grey border-opacity-20 pr-5'>Quantity</span><input type='text' style={{ marginLeft: 5, paddingTop: 3, paddingBottom: 3 }} ></input></div>
                     <div class='border border-grey border-opacity-20 rounded pl-6 mx-4 mb-1'><span class='border-r border-grey border-opacity-20 pr-3'>Collateral</span>
@@ -31,9 +31,9 @@ const Borrow = () => {
                                     color: '#5f5f5f',
                                 }} >
                                 onChange={handleChange}
-                                <Option value="eth"><img src={eth} class='w-6 inline pb-1 mr-1' />ETH</Option>
-                                <Option value="btc"><img src={btc} class='w-6 inline pb-1 mr-1' />BTC</Option>
-                                <Option value="bnb"><img src={bnb} class='w-6 inline pb-1 mr-1' />BNB</Option>
+                                <Option value="eth"><img alt="" src={eth} class='w-6 inline pb-1 mr-1' />ETH</Option>
+                                <Option value="btc"><img alt="" src={btc} class='w-6 inline pb-1 mr-1' />BTC</Option>
+                                <Option value="bnb"><img alt="" src={bnb} class='w-6 inline pb-1 mr-1' />BNB</Option>
                             </Select>
                     </div>
                     <div class='border border-grey border-opacity-20 rounded pl-6 mx-4 mb-1 whitespace-pre'><span class='border-r border-grey border-opacity-20 pr-[22px]'>Amount</span><input type='text' style={{ marginLeft: 5, paddingTop: 3, paddingBottom: 3 }} ></input></div>
@@ -88,7 +88,7 @@ const Borrow = () => {
                     </thead>
                     <tbody class='text-xs text-grey'>
                         <tr>
-                            <td class='px-12 py-5 font-normal inline-flex'><img src={btc} style={{ width: 23 }} /><span class='mt-[3px] ml-1'>BTC </span><span class='mt-[3px] ml-1 text-grey text-opacity-40'>Bitcoin</span></td>
+                            <td class='px-12 py-5 font-normal inline-flex'><img alt="" src={btc} style={{ width: 23 }} /><span class='mt-[3px] ml-1'>BTC </span><span class='mt-[3px] ml-1 text-grey text-opacity-40'>Bitcoin</span></td>
                             <td class='px-12'>0.101345 BTC</td>
                             <td class='px-12'>30 Days</td>
                             <td class='px-12'>5.0%</td>
@@ -96,7 +96,7 @@ const Borrow = () => {
                             <td class='px-12'> <a href="/indexx-bank/Borrow/Repay"><button class='py-1.5 px-5 text-[10px] bg-green hover:bg-hovergreen text-white rounded-sm text-xs'>Repay</button></a></td>
                         </tr>
                         <tr>
-                            <td class='px-12 py-5 inline-flex'><img src={eth} style={{ width: 23 }} /><span class='mt-[3px] ml-1'>ETH </span><span class='mt-[3px] ml-1 text-grey text-opacity-40'>Ethereum</span></td>
+                            <td class='px-12 py-5 inline-flex'><img alt="" src={eth} style={{ width: 23 }} /><span class='mt-[3px] ml-1'>ETH </span><span class='mt-[3px] ml-1 text-grey text-opacity-40'>Ethereum</span></td>
                             <td class='px-12'>0</td>
                             <td class='px-12'>0</td>
                             <td class='px-12'>0%</td>
@@ -104,7 +104,7 @@ const Borrow = () => {
                             <td class='px-12'> <button class='py-1.5 px-5 text-[10px] bg-green hover:bg-hovergreen text-white rounded-sm text-xs'>Repay</button></td>
                         </tr>
                         <tr>
-                            <td class='px-12 py-5 inline-flex'><img src={bnb} style={{ width: 23 }} /><span class='mt-[3px] ml-1'>BNB </span><span class='mt-[3px] ml-1 text-grey text-opacity-40'>Binance</span></td>
+                            <td class='px-12 py-5 inline-flex'><img alt="" src={bnb} style={{ width: 23 }} /><span class='mt-[3px] ml-1'>BNB </span><span class='mt-[3px] ml-1 text-grey text-opacity-40'>Binance</span></td>
                             <td class='px-12'>0</td>
                             <td class='px-12'>0</td>
                             <td class='px-12'>0%</td>
