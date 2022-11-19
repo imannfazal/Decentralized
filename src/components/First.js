@@ -1,7 +1,9 @@
 import "./First.css";
-import { Select, Alert, Tabs, Segmented, Button } from "antd";
+import { Select, Alert, Tabs, Segmented } from "antd";
 import { useState } from "react";
 import Chartt from "./Chartt";
+import { Link
+ } from "react-router-dom";
 import btc from "../assets/BTC.png";
 import eth from "../assets/eth.png";
 import ada from "../assets/ADA.png";
@@ -181,8 +183,8 @@ const First = () => {
                                         </Option>
                                     </Select>
                                 </span>
-                                <Link to="/Exchange">
-                                    <Button type="primary" style={{ width: 335, marginTop: 25 }} href="/ExchangeSwap">
+                                <a href="/Exchange">
+                                    <div class="bg-blue hover:bg-hblue flex justify-center text-white rounded-sm py-2 mt-8">
                                         Exchange
                                     </Button>
                                 </Link>
