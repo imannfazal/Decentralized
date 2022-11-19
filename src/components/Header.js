@@ -5,7 +5,7 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <header class="text-gray-600 bg-blue bg-opacity-90 bg-fill" style={{ backgroundImage: `url(${background})`, backgroundRepeat: "no-repeat", backgroundSize: 'cover' }}>
+        <header class="text-gray-600 bg-[#000000] bg-opacity-90 bg-fill" style={{ backgroundImage: `url(${background})`, backgroundRepeat: "no-repeat", backgroundSize: 'cover' }}>
 
             <div class="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center">
                 <a href='/*' class="flex title-font font-normal items-center text-white mb-4 md:mb-0">
@@ -18,7 +18,7 @@ const Header = () => {
                             <li class="dropdown relative inline pr-1 text-white cursor-pointer font-medium text-base">
                                 <a href='/*' class='text-white '>Products</a>
                                 <div class="dropdown-menu absolute top-0 hidden h-auto flex pt-4 mt-3">
-                                    <ul class="block w-[130px] bg-blue bg-opacity-80 px-5 py-4 ">
+                                    <ul class="block w-[130px] bg-[#000000] bg-opacity-80 px-5 py-4 ">
                                         <li class="py-1"><a href='https://inex.indexx.ai/indexx-exchange/buy-sell' class="block text-white font-normal text-sm cursor-pointer">Centralized</a></li>
                                         <li class="py-1"><a href='/*' class="block text-white font-normal text-sm  cursor-pointer">Decentralized</a></li>
                                         <li class="py-1"><a href='/*' class="block text-white font-normal text-sm cursor-pointer">indexx Tokens</a></li>
@@ -33,7 +33,7 @@ const Header = () => {
                             <li class="dropdown relative inline pr-1 text-white cursor-pointer font-medium text-base">
                                 <a href='/*' class='text-white'>Earn</a>
                                 <div class="dropdown-menu absolute top-0 hidden h-auto flex pt-4 mt-3">
-                                    <ul class="block w-[130px] bg-blue bg-opacity-80 px-5 py-4 ">
+                                    <ul class="block w-[130px] bg-[#000000] bg-opacity-80 px-5 py-4 ">
                                         <li class="py-1"><a href='/TradeToEarn' class="block text-white font-normal text-sm cursor-pointer">Trade to earn</a></li>
                                         <li class="py-1"><a href='/indexxBank' class="block text-white font-normal text-sm cursor-pointer">Grow Fortune</a></li>
                                     </ul>
@@ -47,7 +47,7 @@ const Header = () => {
                             <li class="dropdown relative inline pr-1 text-white cursor-pointer font-medium  text-base">
                                 <a href='/*' class='text-white'>Company</a>
                                 <div class="dropdown-menu absolute top-0 hidden h-auto flex pt-4 mt-3">
-                                    <ul class="block w-[170px] bg-blue bg-opacity-80 px-5 py-4">
+                                    <ul class="block w-[170px] bg-[#000000] bg-opacity-80 px-5 py-4">
                                         <li class="py-1"><a href='/*' class="block text-white font-normal text-sm cursor-pointer">About</a></li>
                                         <li class="py-1"><a href='/*' class="block text-white font-normal text-sm cursor-pointer">Hybrid Exchange</a></li>
                                         <li class="py-1 "><a href='https://register.affiliate.indexx.ai/' class="block text-white font-normal text-sm cursor-pointer">Affiliate Program</a></li>
@@ -65,7 +65,7 @@ const Header = () => {
                             <li class="dropdown relative inline pr-1 text-white cursor-pointer font-medium  text-base">
                                 <a href='/*' class='text-white'>Fortune</a>
                                 <div class="dropdown-menu absolute top-0 hidden h-auto flex pt-4 mt-3">
-                                    <ul class="block w-[170px] bg-blue bg-opacity-80 px-5 py-4">
+                                    <ul class="block w-[170px] bg-[#000000] bg-opacity-80 px-5 py-4">
                                         <li class="py-1"><a href='/*' class="block text-white font-normal text-sm cursor-pointer">Fortune Daily</a></li>
                                         <li class="py-1"><a href='/*' class="block text-white font-normal text-sm cursor-pointer">Hedge Edge</a></li>
                                         
