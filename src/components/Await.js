@@ -29,11 +29,11 @@ const Await = (props) => {
 
                     <span class='text-xs pr-12 inline-flex'>Deposit address: </span>
                     <div class='border border-grey border-opacity-20 mt-1 rounded-sm'>
-                        <span class='pt-5 inline-flex pl-3 mb-3'><img src={qr} class='w-14'></img><span class='inline-flex text-[10px] px-3'>0x7725e90038363bHbsg181284058769420dhkBe1</span> </span>
-                        <div class='text-[11px] bg-grey bg-opacity-20 py-1 pl-3'>Please be careful not to deposit your ETH from a smart contract</div>
+                        <span class='pt-5 inline-flex pl-3 mb-3'><img alt='img' src={qr} class='w-14'></img><span class='inline-flex text-[10px] px-3'>0x7725e90038363bHbsg181284058769420dhkBe1</span> </span>
+                        <div class='text-[11px] bg-grey bg-opacity-20 py-1 pl-3 w-[379px]'>Please be careful not to deposit your ETH from a smart contract</div>
                     </div>
 
-                    <div class='inline-flex mt-3 mb-5'><span class='text-[10px] mr-7 ml-8'><img src={pending} class='w-7 h-7 bg-blue rounded-full p-1 ml-5 mb-0.5 mt-3' />Pending Deposit</span><span class='text-[10px] mr-7'><img src={confirm} class='w-7 h-7 bg-blue rounded-full p-1  ml-3 mb-0.5 mt-3' />Confirming</span><span class='mr-7 text-[10px]'><img src={exchange} class='w-7 h-7 bg-blue rounded-full p-1  ml-3 mb-0.5 mt-3' />Exchanging</span><span class='mr-7 text-[10px]'><img src={sending} class='w-7 h-7 bg-blue rounded-full p-1  ml-1 mb-0.5 mt-3' />Sending</span></div>
+                    <div class='inline-flex mt-3 mb-5'><span class='text-[10px] mr-7 ml-8'><img alt='img' src={pending} class='w-7 h-7 bg-blue rounded-full p-1 ml-5 mb-0.5 mt-3' />Pending Deposit</span><span class='text-[10px] mr-7'><img alt='img' src={confirm} class='w-7 h-7 bg-blue rounded-full p-1  ml-3 mb-0.5 mt-3' />Confirming</span><span class='mr-7 text-[10px]'><img alt='img' src={exchange} class='w-7 h-7 bg-blue rounded-full p-1  ml-3 mb-0.5 mt-3' />Exchanging</span><span class='mr-7 text-[10px]'><img alt='img' src={sending} class='w-7 h-7 bg-blue rounded-full p-1  ml-1 mb-0.5 mt-3' />Sending</span></div>
 
 
                 </div>

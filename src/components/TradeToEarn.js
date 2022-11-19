@@ -1,7 +1,6 @@
 import { Card, Image, Button, Input } from "antd";
 import { Divider } from "antd";
 import { Typography } from "antd";
-import { useNavigate } from "react-router-dom";
 
 import exgcoin from "../assets/exgcoin.png";
 import no11 from "../assets/no11.png";
@@ -18,15 +17,11 @@ import Header from "./Header";
 
 //import Footer from '../Footer/Footer';
 
-import { useEffect, useState } from "react";
 import React from "react";
 
 const { Text } = Typography;
 
 const TradeToEarn = () => {
-  const navigate = useNavigate();
-  let [totalBalanceInUSD, settotalBalanceInUSD] = useState(0);
-
   return (
     <>
     <Header />
@@ -43,7 +38,7 @@ const TradeToEarn = () => {
                 textAlign: "center",
                 fontWeight: 400,
                 fontSize: "50px",
-                lineHeight: "1em",
+                lineHeight: "1 rem",
                 margin: -19,
               }}
             >

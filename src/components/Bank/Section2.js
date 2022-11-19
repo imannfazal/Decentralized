@@ -1,6 +1,5 @@
 import DemoPie from "./DemoPie";
 import DemoLine from "./DemoLine";
-import { Tabs } from 'antd';
 import Chart2 from "./Chart2";
 const Section2 = () => {
     return (
