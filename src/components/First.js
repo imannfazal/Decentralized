@@ -1,9 +1,8 @@
 import "./First.css";
-import { Select, Alert, Tabs, Segmented } from "antd";
+import { Select, Button, Alert, Tabs, Segmented } from "antd";
 import { useState } from "react";
 import Chartt from "./Chartt";
-import { Link
- } from "react-router-dom";
+import { Link } from "react-router-dom";
 import btc from "../assets/BTC.png";
 import eth from "../assets/eth.png";
 import ada from "../assets/ADA.png";
@@ -11,7 +10,6 @@ import algo from "../assets/ALGO.png";
 import enj from "../assets/ENJ.png";
 import token from '../assets/indexx500.png';
 import bg from '../assets/bgForUi.png';
-import { Link } from "react-router-dom";
 const { Option } = Select;
 const First = () => {
     const [value, setValue] = useState(null);
@@ -102,7 +100,7 @@ const First = () => {
                                     </Select>
                                 </span>
                                 <Link to="/Exchange">
-                                    <Button type="primary" style={{ width: 335, marginTop: 25 }} href="/ExchangeSwap">
+                                    <Button type="primary" style={{ width: 335, marginTop: 25 }} >
                                         Exchange
                                     </Button>
                                 </Link>
@@ -183,17 +181,19 @@ const First = () => {
                                         </Option>
                                     </Select>
                                 </span>
-                                <a href="/Exchange">
-                                    <div class="bg-blue hover:bg-hblue flex justify-center text-white rounded-sm py-2 mt-8">
+                                <Link to="/ExchangeSwap">
+                                    <Button type="primary" style={{ width: 335, marginTop: 25 }} >
                                         Exchange
                                     </Button>
                                 </Link>
-                            </Tabs.TabPane>
-                        </Tabs>
-                    </div>
-                </span>
+                          
+                        </Tabs.TabPane>
+                    </Tabs>
             </div>
-        </div>
+        </span>
+
+            </div >
+        </div >
     );
 };
 
