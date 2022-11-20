@@ -2,20 +2,23 @@
 
 .ant-tabs-tab {
     color: #5f5f5f !important;
+    font-size:30;
   }
 
   .ant-tabs-tab-active {
     color: #006DFF !important;
+    font-size:30;
   }
 
   .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    color: #ffffff !important; 
-    font-weight: 200;
+    color: #5F5F5F!important; 
+    font-weight: '400';
     padding: 2px;
+    font-size:30;
  }
 
 .chart_inner_middle {
-    font-size:20px;
+     font-size:30;
 }
 
 .chart_inner_right .ant-segmented {
