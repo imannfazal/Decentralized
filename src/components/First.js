@@ -5,7 +5,7 @@ import { useState } from "react";
 import Chartt from "./Chartt";
 import { Link } from "react-router-dom";
 import btc from "../assets/BTC.png";
-import eth from "../assets/eth.png";
+import eth from "../assets/ETH.png";
 import ada from "../assets/ADA.png";
 import algo from "../assets/ALGO.png";
 import enj from "../assets/ENJ.png";

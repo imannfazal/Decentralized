@@ -7,7 +7,7 @@ import Header from './Header';
 import btc from '../assets/BTC.png'
 import ada from '../assets/ADA.png'
 import bg from '../assets/bgForUi.png';
-import eth from '../assets/eth.png'
+import eth from '../assets/ETH.png'
 import token from '../assets/indexx500.png';
 import algo from '../assets/ALGO.png'
 import enj from '../assets/ENJ.png'
